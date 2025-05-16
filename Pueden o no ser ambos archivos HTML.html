@@ -1,0 +1,24 @@
+✅ ¿Pueden ambos archivos ser .html?
+NO. Solamente el formulario puede ser .html. El archivo que procesa los datos tiene que ser .php, porque es el que ejecuta código del lado del servidor (el que determina si el número es par o impar).
+
+📂 Entonces, lo correcto es:
+Archivo	Extensión	Función	¿Puede tener PHP?
+formulario.html	.html	Muestra el formulario	❌ No debe tener PHP
+procesar.php	.php	Procesa el número enviado y muestra el resultado	✅ Sí, necesita PHP
+
+🚫 ¿Qué pasa si ambos son .html?
+El navegador solo mostrará el formulario.
+
+Al enviar el número, no se va a procesar nada porque HTML no ejecuta lógica como la de determinar si un número es par o impar.
+
+Verás el código PHP sin procesar, como texto plano.
+
+✅ Alternativa válida
+Si querés, ambos archivos podrían ser .php, pero solo tiene sentido si también necesitás lógica en la primera página (por ejemplo, mostrar errores o personalizar el formulario con datos del servidor).
+
+Pero para tu caso, lo ideal es:
+
+Formulario: .html
+
+Procesamiento: .php
+
